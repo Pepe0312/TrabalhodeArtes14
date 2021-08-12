@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Artes14 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="Logotipo.png" class="logo"></a>
+            
+        </header>
+        <div class="content">
+         <div class="textBox">
+            <h2><br><span></span></h2> 
+            <p>Trabalho de Artes, clique nos folders</p>
+            <a>Aproveite</a>
+            </div>
+            <div class="imgBox">
+                <img src="Vector1.png"  class="hamburguer">
+        </div>
+        <ul class="thumb">
+            <li><img src="Vector1.png" onclick="imgSlider('Vector1.png');changeCircleColor('#FF0000')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="1.png"></a></li>
+            <li><a href="#"><img src="2.png"></a></li>
+            <li><a href="#"><img src="3.png"></a></li>
+        </ul>
+    </section>
+
+    <script  type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.hamburguer').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
